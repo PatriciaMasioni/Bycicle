@@ -1,0 +1,332 @@
+/************************************************************
+
+Theme name : eCommerce
+Description: eCommerce is...
+Author: Patricia Masioni
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Version: 1.0
+Tags: eCommerce, design school project.
+
+**************************************************************
+
+Table of Contents:
+
+  0. GLOBAL
+  1. HEADER
+  2. MENU
+  3. MAIN
+  4. FOOTER
+
+
+**************************************************************/
+
+
+/************************************************
+0.	GLOBAL
+************************************************/
+html {
+  /*
+  background-image: url(../img/img_BG.jpg);
+  background-size: cover;
+  background-position:center;
+  background-attachment: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  */
+
+  background: url(../img/img_BG.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(30, 63, 247);
+}
+
+a:hover {
+  color: rgba(30, 63, 247, 0.7);
+}
+
+li {
+  list-style-type: none;
+}
+
+input {
+  margin: 0.5rem 0;
+}
+
+
+
+/************************************************
+  1. HEADER
+************************************************/
+
+div.logo {
+  margin-top: 2rem;
+}
+
+.logo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#logo_size {
+  width: 5rem;
+}
+
+/************************************************
+    2. MENU
+************************************************/
+
+
+nav {
+    border-bottom : solid 0.09rem;
+    color: #1E3FF7;
+    margin: 2rem 0;
+}
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+li {
+  display: inline;
+  margin: 0 1rem 0 1rem;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+
+/************************************************
+  3. MAIN
+************************************************/
+
+/********************
+ NAV_HOME
+********************/
+
+main.home {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 16rem;
+}
+
+article.home {
+  /*padding: 5rem; */
+  text-align: center;
+  color: #947100;
+
+}
+
+h3.home {
+  font-family: "CaslonCP";
+  font-weight: lighter;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+h2.home {
+  font-family: "CaslonCP";
+  font-weight: lighter;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 1rem;
+}
+
+h2#home {
+  font-family: "CaslonCP";
+  font-weight: bold;
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding: 1rem;
+}
+
+/********************
+ NAV_STORE
+********************/
+
+main.store {
+  background-color: rgb(252, 252, 252);
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+img.store {
+  opacity: 0.5;
+}
+
+img:hover {
+  opacity: 1.0;
+}
+
+ul.store {
+  margin: 3rem;
+/*
+  padding: 2rem;
+  border: 0.07rem solid #d6d5d4;
+*/
+}
+
+li.store {
+  margin: 1rem 1rem;
+  border: 0.07rem solid #d6d5d4;
+
+}
+
+li.store img.store {
+  width: 18rem;
+  min-width: 10rem;
+}
+
+h4.store {
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+#scrollUp {
+  	bottom: 20px;
+  	right: 20px;
+  	padding: 10px 20px;
+  	border-radius: 3px;
+  	background: #fff;
+  	color: #555;
+}
+
+/********************
+ NAV_REGISTER
+********************/
+
+main.register {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgb(252, 252, 252);
+}
+
+article.register {
+  border: 0.07rem solid #d6d5d4;
+  margin: 2rem;
+  padding: 2rem 5rem 5rem 5rem;
+}
+
+form.register {
+  float:left;
+}
+
+ul.register {
+  padding-left: 0;
+}
+
+li.register {
+  display: block;
+  width: 100%;
+  margin: 0.5rem;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+label.register {
+  text-align: left;
+}
+
+h3.register {
+   text-align: center;
+   font-weight: 400;
+   text-transform: uppercase;
+ }
+
+ /********************
+  NAV_ABOUT_CONTACT
+ ********************/
+
+main.us {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgb(252, 252, 252);
+  margin: 0;
+ }
+
+ /*****
+  PART_ABOUT
+ ******/
+
+aside.about {
+  float:left;
+  width: 65%;
+  margin: 2rem;
+}
+
+article.about {
+  padding: 0 5rem 5rem 5rem;
+}
+
+h3.about {
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 2rem 0;
+  text-align: left;
+}
+
+p.about {
+  text-align: left;
+}
+
+/******
+ PART_CONTACT
+******/
+
+aside.contact {
+  float: right;
+  width: 20%;
+  border-left: 0.07rem solid #d6d5d4;
+  margin: 2rem;
+}
+
+li.contact {
+  display: block;
+  width: 100%;
+  margin: 0.5rem;
+  font-size: 0.8rem;
+}
+
+h3.contact {
+  margin: 0;
+  padding-left: 5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+
+}
+
+/************************************************
+  4. FOOTER
+************************************************/
+
+footer {
+  margin: 1rem;
+  text-align: center;
+  color: rgb(30, 63, 247);
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  /*
+  background-color: rgb(252, 252, 252);
+  */
+}
+
+p.footer {
+  display: inline;
+  margin: 0 1rem;
+}
